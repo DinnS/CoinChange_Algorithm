@@ -15,7 +15,8 @@ int main() {
     int amount = 11;
 
     // 3) Call the coinChange function
-    int result = coinChange(coins, coinsSize, amount);
+    int result = 0;
+    result = coinChange(coins, coinsSize, amount);
 
     // 4) Print the result
     printf("Coins: ");
@@ -76,7 +77,7 @@ int coinChange(int* coins, int coinsSize, int amount) {
         }
     }
 
-    int result;
+    int result = 0;
     if (dp_amount_min_coins[amount] == INF) {
         // Still infinity so return -1, what mean not possible
         result = -1;
