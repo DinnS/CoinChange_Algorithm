@@ -25,9 +25,9 @@ Idea:
 
 5) Create a loop for checking every coins 
 
-6) If current coin <= target_amount, then we find remaining_amount by `target_amount - current_coin`
+6) If current `coin <= target_amount`, then we find remaining_amount by `target_amount - current_coin`
 
-7) If we already know how to make remaining_amout (not INF), then we can make proposed_min_coins using already known combination what needed for remaining_amount and adding one more coin to it (old coins + this one)
+7) If we already know how to make remaining_amout (not INF), then we can make proposed_min_coins using already known combination what needed for `remaining_amount` and adding one more coin to it (old coins + this one)
 
 8) We should check if new proposed_min_coins is smallest than already known combination number, `proposed_min_coins < dp_amount_min_coins[target_amount]`
 
